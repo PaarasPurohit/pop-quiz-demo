@@ -10,9 +10,6 @@ import org.springframework.stereotype.Service;
 import com.bfwg.model.User;
 import com.bfwg.repository.UserRepository;
 
-/**
- * Created by fan.jin on 2016-10-31.
- */
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {

@@ -19,9 +19,6 @@ import com.bfwg.model.User;
 import com.bfwg.repository.UserRepository;
 import com.bfwg.service.UserService;
 
-/**
- * Created by fan.jin on 2016-10-15.
- */
 
 @Service
 public class UserServiceImpl implements UserService {
