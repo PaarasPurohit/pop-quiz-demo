@@ -15,9 +15,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
 
-/**
- * Created by fan.jin on 2016-10-19.
- */
 
 @Component
 public class TokenHelper {

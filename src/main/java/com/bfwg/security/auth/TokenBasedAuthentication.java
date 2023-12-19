@@ -3,9 +3,7 @@ package com.bfwg.security.auth;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 
-/**
- * Created by fan.jin on 2016-11-11.
- */
+
 public class TokenBasedAuthentication extends AbstractAuthenticationToken {
 
 	private static final long serialVersionUID = -7977244514469074792L;

@@ -21,9 +21,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-/**
- * Created by fan.jin on 2016-10-15.
- */
 
 @Entity
 @Table(name = "USERS")

@@ -31,9 +31,7 @@ import com.bfwg.security.TokenHelper;
 import com.bfwg.security.auth.JwtAuthenticationRequest;
 import com.bfwg.service.UserService;
 
-/**
- * Created by fan.jin on 2017-05-10.
- */
+
 
 @RestController
 @RequestMapping(value = "/auth", produces = MediaType.APPLICATION_JSON_VALUE)

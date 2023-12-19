@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bfwg.model.User;
 import com.bfwg.service.UserService;
 
-/**
- * Created by fan.jin on 2016-10-15.
- */
 
 @RestController
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)

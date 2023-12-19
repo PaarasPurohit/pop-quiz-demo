@@ -21,10 +21,6 @@ import com.bfwg.security.auth.RestAuthenticationEntryPoint;
 import com.bfwg.security.auth.TokenAuthenticationFilter;
 import com.bfwg.service.impl.CustomUserDetailsService;
 
-/**
- * Created by fan.jin on 2016-10-19.
- */
-
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
