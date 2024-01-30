@@ -6,4 +6,4 @@ services:
     container_name: springboot-jwt-starter
     build: .
     ports:
-      - "8069:8069"
+      - "8012:8012"
