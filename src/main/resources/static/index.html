@@ -3,11 +3,15 @@
 
 <head>
     <base href="/">
-    <title>JWT on Springboot</title>
+    <title>Paaras' Pop Quiz</title>
     <link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
     [ng\:cloak], [ng-cloak], .ng-cloak {
       display: none !important;
+      color: #6acb5e;
+    }
+    li {
+      color: #6acb5e;
     }
     </style>
 </head>
@@ -16,7 +20,8 @@
     <ul style="margin-bottom: 20px;" class="nav nav-pills" role="tablist">
         <li ng-class="tabClass('/')"><a href="#/" ng-click="setSelectedTab('/')">Home</a></li>
         <li ng-class="tabClass('/login')" ng-hide="authenticated"><a href="#/login" ng-click="setSelectedTab('/login')">Login</a></li>
-        <li ng-show="authenticated"><a href="" ng-click="logout()">logout</a></li>
+        <!--<li ng-class="tabClass('/access-denied')"><a href="#/access-denied" ng-click="setSelectedTab('/access-denied')">Test Access Denied Error</a></li>-->
+        <li ng-show="authenticated"><a href="" ng-click="logout()">Logout</a></li>
     </ul>
     <div ng-view ></div>
   </div>

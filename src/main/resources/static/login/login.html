@@ -1,17 +1,72 @@
-<div class="row">
-    <div class="alert alert-danger col-sm-6 col-lg-4" ng-show="error">
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #313336;
+    }
+    
+    .error-message {
+        margin-bottom: 20px;
+    }
+    
+    .login-form {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #313336;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #313336;
+        border-radius: 4px;
+    }
+    
+    .btn-primary {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #313336;
+        background-color: #6acb5e;
+        border: 1px solid #6acb5e;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .btn-primary:hover {
+        background-color: #00b34e;
+        border-color: #02a440;
+    }    
+</style>
+<div class="container">
+    <div class="alert alert-danger error-message" ng-show="error">
         There was a problem logging in. Please try again.
     </div>
-</div>
-<div class="row">
-    <form role="form" ng-submit="login()" class="col-sm-6 col-lg-4">
+    <form role="form" ng-submit="login()" class="login-form">
         <div class="form-group">
             <label for="username">Username:</label>
-            <input type="text" placeholder="user/admin" class="form-control" id="username" name="username" ng-model="credentials.username"/>
+            <input type="text" placeholder="Username" class="form-control" id="username" name="username" ng-model="credentials.username"/>
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
-            <input type="password" placeholder="123" class="form-control" id="password" name="password" ng-model="credentials.password"/>
+            <input type="password" placeholder="Password" class="form-control" id="password" name="password" ng-model="credentials.password"/>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

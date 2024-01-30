@@ -94,4 +94,18 @@ public class WebSecurityConfig {
 					"/**/*.js");
 		};
 	}
+
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+            .authorizeRequests()
+                .antMatchers("/public/**").permitAll() // Allow public access
+                .anyRequest().authenticated()
+                .and()
+            .formLogin()
+                .loginPage("/login") // Specify your custom login page
+                .permitAll()
+                .and()
+            .exceptionHandling()
+                .accessDeniedPage("/access-denied"); // Specify your custom access-denied page
+    }
 }

@@ -4,6 +4,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.dashboard',
   'myApp.login',
+  /*'myApp.access-denied',*/
   'myApp.services'
 ]).
 config(['$locationProvider', '$routeProvider', "$httpProvider", function($locationProvider, $routeProvider, $httpProvider) {
